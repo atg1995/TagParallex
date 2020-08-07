@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    list-style: none;
+}
+img{
+    object-fit: none;
+}
+:root{
+    --posX-bottom : 50%;
+    --posY-bottom : 50%;
+
+    --posX-mid : 50%;
+    --posY-mid : 50%;
+    
+    --posX-top : 50%;
+    --posY-top : 50%;
+}
+.container{
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 200vh;
+    overflow: hidden;
+    border: 5px solid blue;
+}
+.parallex{
+    position: absolute;
+}
+.image {
+    height: 90vh;
+    width: 70vw;;
+    object-fit: none;
+    /*  background-color: yellow;*/
+  }
+
+  .image--bottom {
+    object-position: var(--posX-bottom) var(--posY-bottom);
+  }
+  .image--mid {
+    object-position: var(--posX-mid) var(--posY-mid);
+  }
+  .image--top {
+    object-position: var(--posX-top) var(--posY-top);
+  }
