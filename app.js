@@ -1,14 +1,14 @@
 let root = document.documentElement;
 
 root.addEventListener("mousemove", e =>{
-    var xBottom = ((e.screenX)/ screen.height) *10;
+    var xBottom = ((e.screenX)/ screen.height) *20;
     var yBottom = ((e.screenY-20)/ screen.width) *30;
 
     var xMid = ((e.screenX)/ screen.height) *10;
-    var yMid = ((e.screenY-20)/ screen.width) *10;
+    var yMid = ((e.screenY-20)/ screen.width) *5;
 
-    var xTop = ((e.screenX)/ screen.height) *2;
-    var yTop = ((e.screenY-20)/ screen.width) *3;
+    var xTop = ((e.screenX)/ screen.height) *50;
+    var yTop = ((e.screenY-20)/ screen.width) *10;
 
     root.style.setProperty('--posX-bottom', xBottom + "%");
     root.style.setProperty('--posY-bottom', yBottom + "%");
